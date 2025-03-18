@@ -1,0 +1,11 @@
+
+<resources>
+    <string name="app_name">QLChiTieu</string>
+    <string name="ellipsis">&#8230;</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_leaderboard">Leaderboard</string>
+    <string name="menu_store">Store</string>
+    <string name="menu_profile">Profile</string>
+    <string name="toolbar_title">Chi tiết</string>
+    <string name="back_button_description">Back</string>
+</resources>

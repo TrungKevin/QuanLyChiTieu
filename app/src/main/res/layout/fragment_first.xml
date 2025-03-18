@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".fragment.FirstFragment">
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:popupBackground="@color/white"
+        android:spinnerMode="dropdown"
+        android:gravity="center"
+        android:overlapAnchor="false" />
+
+    <!-- CardView chứa các trường nhập liệu -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Số tiền -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sotien_frag1"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số tiền">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_sotien_frag1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorTextSecondary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Lý do -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_lydo_frag1"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Lý do">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_lydo_frag1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorTextSecondary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Ngày -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txt_ngay_frag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày:"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_date_frag1"
+                    style="@style/CustomTextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Chọn ngày">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_date_frag1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:text="2025-02-21"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorTextSecondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Nút Lưu -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_luu_frag1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="Lưu"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingVertical="12dp"
+        app:cornerRadius="8dp" />
+</LinearLayout>

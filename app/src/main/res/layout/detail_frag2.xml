@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FirstFragment" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Spinner
+            android:id="@+id/spinner_frag2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_sotien_frag2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Số tiền"
+            android:textColorHint="#888888"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/edit_lydo_frag2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:hint="Lý do"
+            android:textColorHint="#888888" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_ngay_frag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Ngày :"
+                android:layout_marginStart="20dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_date_frag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2025-02-21"
+                android:background="#8AD2DC"
+                android:inputType="date"
+                android:layout_marginStart="10dp"
+                android:focusable="false"
+                android:clickable="true"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_capnhat_frag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#00BCD4"
+                android:layout_marginStart="50dp"
+                android:text="Cập nhật" />
+
+            <Button
+                android:id="@+id/btn_xoa_frag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#00BCD4"
+                android:layout_marginStart="135dp"
+                android:text="Xóa" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
